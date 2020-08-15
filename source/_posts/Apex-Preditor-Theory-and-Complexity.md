@@ -1,7 +1,7 @@
 ---
 title: Apex Preditor Theory and Complexity
 date: 2020-01-27 15:56:16
-tags: apex-preditor, complexity
+tags: complexity
 ---
 
 "During a period of stability any eco-system has an apex predator around which the eco-system organises... but when instability hits matters get problematic. The old ideas have reached maturity and the ecosystem is changing faster than can be understood or comprehended... At this point a low energy cost, adaptive entity can stabilise a new ecosystem, create a new way of thinking." ~ http://cognitive-edge.com/blog/it-never-troubles-the-wolf-how-many-the-sheep-may-be/

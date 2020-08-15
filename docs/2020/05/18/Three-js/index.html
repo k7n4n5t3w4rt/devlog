@@ -1,4 +1,215 @@
-<!DOCTYPE html><html lang="en"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content=""><title>Three.js | Collapsing Cyberspace</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/normalize.css/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/purecss/build/pure-min.min.css"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/purecss/build/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script><link rel="icon" mask="" sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><script type="text/javascript" src="//cdn.jsdelivr.net/npm/clipboard/dist/clipboard.min.js"></script><script type="text/javascript" src="//cdn.jsdelivr.net/gh/codeseven/toastr/build/toastr.min.js"></script><link rel="stylesheet" href="//cdn.jsdelivr.net/gh/codeseven/toastr/build/toastr.min.css"><meta name="generator" content="Hexo 5.0.2"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">Three.js</h1><a id="logo" href="/.">Collapsing Cyberspace</a><p class="description">Art and Augmented Reality</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> Home</i></a><a href="/archives/"><i class="fa fa-archive"> Archive</i></a><a href="/about/"><i class="fa fa-user"> About</i></a><a href="/atom.xml"><i class="fa fa-rss"> RSS</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">Three.js</h1><div class="post-meta">2020-05-18</div><div class="post-content"><p>WebAR is built on WebGL, and the library for working with WebGL is <a target="_blank" rel="noopener" href="https://threejs.org/">three.js</a>, invented by <a target="_blank" rel="noopener" href="https://github.com/mrdoob/three.js/">mrdoob</a>. Before learning webAR, I thought I should do a couple of experiments with three.js so that I understood some of the basic concepts. Also, I wanted to test out my <a href="../../17/ES-Preact-Boilerplate-AKA-Goodthing/">boilerplate</a>.</p>
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <!--Description-->
+
+    
+
+    
+        <meta name="description" content="WebAR is built on WebGL, and the library for working with WebGL is three.js, invented by mrdoob. Before learning webAR, I thought I should do a couple"/>
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="Kynan Stewart Hughes"/>
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="Three.js"/>
+    
+
+    <!--Open Graph Description-->
+    
+        <meta property="og:description" content="WebAR is built on WebGL, and the library for working with WebGL is three.js, invented by mrdoob. Before learning webAR, I thought I should do a couple"/>
+    
+
+    <!--Open Graph Site Name-->
+        <meta property="og:site_name" content="Collapsing Cyberspace"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article"/>
+    
+
+    <!--Page Cover-->
+    
+    
+        <meta property="og:image" content="http://devlog.brokenbaysoftware.cohttp://www.codeblocq.com/assets/projects/hexo-theme-clean-blog/img/home-bg.jpg"/>
+    
+
+        <meta name="twitter:card" content="summary_large_image"/>
+
+    
+
+    
+        <meta name="twitter:image" content="http://devlog.brokenbaysoftware.cohttp://www.codeblocq.com/assets/projects/hexo-theme-clean-blog/img/home-bg.jpg"/>
+    
+
+    <!-- Title -->
+    
+    <title>Three.js - Collapsing Cyberspace</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css"/>
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css"/>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet"/>
+
+    <!-- Google Analytics -->
+    
+
+
+    <!-- favicon -->
+    
+
+<meta name="generator" content="Hexo 5.0.2"></head>
+
+
+<body>
+
+    <!-- Menu -->
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Collapsing Cyberspace</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                
+                    <li>
+                        <a href="/">
+                            
+                                Home
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/archives">
+                            
+                                Archives
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/tags">
+                            
+                                Tags
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories">
+                            
+                                Categories
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a target="_blank" rel="noopener" href="https://github.com/klugjo/hexo-theme-clean-blog">
+                            
+                                <i class="fa fa-github fa-stack-2x"></i>
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+    <!-- Main Content -->
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
+<header class="intro-header" style="background-image: url('http://www.codeblocq.com/assets/projects/hexo-theme-clean-blog/img/home-bg.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>Three.js</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        
+                            2020-05-18
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
+                    
+                        
+
+
+<a href="/tags/javascript-webAR/">#javascript, webAR</a>
+
+
+                    
+                </div>
+                <div class="col-lg-4 col-md-5 post-categories">
+                    
+                </div>
+            
+
+            <!-- Gallery -->
+            
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <p>WebAR is built on WebGL, and the library for working with WebGL is <a target="_blank" rel="noopener" href="https://threejs.org/">three.js</a>, invented by <a target="_blank" rel="noopener" href="https://github.com/mrdoob/three.js/">mrdoob</a>. Before learning webAR, I thought I should do a couple of experiments with three.js so that I understood some of the basic concepts. Also, I wanted to test out my <a href="../../17/ES-Preact-Boilerplate-AKA-Goodthing/">boilerplate</a>.</p>
 <p><a target="_blank" rel="noopener" href="http://sketches.brokenbaysoftware.co/lines1/">Lines1</a> is a line generated from a 100 random points. Not random exactly but random within a range around the last point that was generated.</p>
 <p><a target="_blank" rel="noopener" href="http://sketches.brokenbaysoftware.co/lines2/">Lines2</a> is the same thing but 100… or a 1000, i can’t remember… lines are generated at once and rendered to the scene.</p>
 <p>The key learnings were:</p>
@@ -9,4 +220,77 @@
 </ul>
 <p>Doing three.js inside <code>useEffect()</code> is basically just a mess of side effects. Not very functional at all. The approach I’ve use so far is very procedural - set up all the properties for the scene things and then render, then do this onTapEnd, etc. It’s very oldschool. One idea might be to use RX.js but I’m wondering if it’s worth it. <a target="_blank" rel="noopener" href="https://aframe.io/docs/1.0.0/introduction/">A-Frame</a> is an HTML-like, declarative wrapper around three.js. It might be better to just use that and hide away all the funny business.</p>
 <p>Looking ahead at the <a target="_blank" rel="noopener" href="https://ar-js-org.github.io/AR.js-Docs/">AR.js docs</a>, all the examples use AR.js. There is a version of AR.js that uses three.js directly without A-Frame but there aren’t any actual examples in the docs showing how to use it, just some repos on GitHub. So, the next step is probably to try out Goodthing with AR.js.</p>
-</div><div class="tags"><a href="/tags/javascript-webAR/"><i class="fa fa-tag"></i>javascript, webAR</a></div><div class="post-nav"><a class="pre" href="/2020/05/21/TheArchitectureOfWebAR/">The Architecture of WebAR</a><a class="next" href="/2020/05/17/Notes-on-Art-from-Dave-Snowden/">Notes on Art from Dave Snowden</a></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form class="search-form" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank"><input type="text" name="q" maxlength="20" placeholder="Search"/><input type="hidden" name="sitesearch" value="http://devlog.brokenbaysoftware.co"/></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> Categories</i></div></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> Tags</i></div><div class="tagcloud"><a href="/tags/javascript-webAR/" style="font-size: 15px;">javascript, webAR</a> <a href="/tags/complexity-art-assemblage-augmented-space/" style="font-size: 15px;">complexity, art, assemblage, augmented-space</a> <a href="/tags/art-quotes-complexity/" style="font-size: 15px;">art, quotes, complexity</a> <a href="/tags/ontology-epistemology-empiricism-idealism/" style="font-size: 15px;">ontology, epistemology, empiricism, idealism</a> <a href="/tags/practice-based-research-questions/" style="font-size: 15px;">practice-based, research-questions</a> <a href="/tags/s-curve/" style="font-size: 15px;">s-curve</a> <a href="/tags/TRM-research-proposal/" style="font-size: 15px;">TRM, research-proposal</a> <a href="/tags/webAR/" style="font-size: 15px;">webAR</a> <a href="/tags/cyberspace-william-gibson-locative-art-cyberpunk-art/" style="font-size: 15px;">cyberspace, william-gibson, locative-art, cyberpunk, art</a> <a href="/tags/plr/" style="font-size: 15px;">plr</a> <a href="/tags/apex-preditor-complexity/" style="font-size: 15px;">apex-preditor, complexity</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> Recent</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2020/05/25/TRM-Research-Proposal-Workshop/">TRM Research Proposal Workshop</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/05/21/TheArchitectureOfWebAR/">The Architecture of WebAR</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/05/18/Three-js/">Three.js</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/05/17/Notes-on-Art-from-Dave-Snowden/">Notes on Art from Dave Snowden</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/05/17/ES-Preact-Boilerplate-AKA-Goodthing/">ES Module Preact Boilerplate - AKA, "Goodthing"</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/01/28/S-Curves/">S-Curves</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/01/27/Apex-Preditor-Theory-and-Complexity/">Apex Preditor Theory and Complexity</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/12/27/Augmented-space-Assemblages-and-Art/">Augmented-space, Assemblages and Art</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/10/06/Research-Questions/">Research Questions?</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/10/02/Two-Texts/">Two Texts</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> Links</i></div><ul></ul><a href="http://www.example1.com/" title="site-name1" target="_blank">site-name1</a><ul></ul><a href="http://www.example2.com/" title="site-name2" target="_blank">site-name2</a><ul></ul><a href="http://www.example3.com/" title="site-name3" target="_blank">site-name3</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2020 <a href="/." rel="nofollow">Collapsing Cyberspace.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//cdn.jsdelivr.net/gh/fancyapps/fancybox/dist/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox/dist/jquery.fancybox.min.css"><script type="text/javascript" src="/js/copycode.js" successtext="Copy Successed!"></script><link rel="stylesheet" type="text/css" href="/css/copycode.css"><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
+
+
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+                </div>
+            
+        </div>
+    </div>
+</article>
+
+    <!-- Footer -->
+    <hr />
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+
+                    
+
+                    
+                        <li>
+                            <a href="https://github.com/k7n4n5t3w4rt" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+
+                    
+
+                    
+                </ul>
+                <p class="copyright text-muted">&copy; 2020 Kynan Stewart Hughes<br></p>
+                <p class="copyright text-muted">Original Theme <a target="_blank" href="http://startbootstrap.com/template-overviews/clean-blog/">Clean Blog</a> from <a href="http://startbootstrap.com/" target="_blank">Start Bootstrap</a></p>
+                <p class="copyright text-muted">Adapted for <a target="_blank" href="https://hexo.io/">Hexo</a> by <a href="http://www.codeblocq.com/" target="_blank">Jonathan Klughertz</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+
+</body>
+
+</html>

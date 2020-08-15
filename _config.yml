@@ -7,7 +7,7 @@ title: Collapsing Cyberspace
 subtitle: "Art and Augmented Reality"
 description: ""
 keywords:
-author: John Doe
+author: Kynan Stewart Hughes
 language: en
 timezone: ""
 
@@ -98,7 +98,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: maupassant
+theme: clean-blog
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
