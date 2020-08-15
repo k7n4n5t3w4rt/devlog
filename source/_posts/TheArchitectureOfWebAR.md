@@ -6,5 +6,5 @@ tags: webAR
 
 The current architecture of a webAR app and the underlying software technologies.
 
-<img width="50%" alt="A Generalised Architecture for WebAR" src="/devlog/images/webar_1.jpg" />
-<img width="50%" alt="A Specific Example Architecture for WebAR" src="/devlog/images/webar_2.jpg" />
+<img width="50%" alt="A Generalised Architecture for WebAR" src="/images/webar_1.jpg" />
+<img width="50%" alt="A Specific Example Architecture for WebAR" src="/images/webar_2.jpg" />
