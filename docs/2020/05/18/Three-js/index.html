@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 5.2.0">
+<meta name="generator" content="Hexo 5.0.2">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
@@ -13,13 +13,13 @@
 <link rel="stylesheet" href="/css/main.css">
 
 
-
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.0/css/all.min.css">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  
+  <link rel="stylesheet" href="/lib/animate-css/animate.min.css">
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"devlog.brokenbaysoftware.co","root":"/","scheme":"Muse","version":"8.0.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Suche...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}};
+    var CONFIG = {"hostname":"devlog.brokenbaysoftware.co","root":"/","scheme":"Muse","version":"8.0.0-rc.5","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false};
   </script>
 
   <meta name="description" content="WebAR is built on WebGL, and the library for working with WebGL is three.js, invented by mrdoob. Before learning webAR, I thought I should do a couple of experiments with three.js so that I understood">
@@ -30,11 +30,10 @@
 <meta property="og:description" content="WebAR is built on WebGL, and the library for working with WebGL is three.js, invented by mrdoob. Before learning webAR, I thought I should do a couple of experiments with three.js so that I understood">
 <meta property="og:locale">
 <meta property="article:published_time" content="2020-05-17T21:19:05.000Z">
-<meta property="article:modified_time" content="2020-08-15T11:32:47.839Z">
+<meta property="article:modified_time" content="2020-08-14T22:34:30.064Z">
 <meta property="article:author" content="Kynan Stewart Hughes">
 <meta property="article:tag" content="javascript, webAR">
 <meta name="twitter:card" content="summary">
-
 
 <link rel="canonical" href="https://devlog.brokenbaysoftware.co/2020/05/18/Three-js/">
 
@@ -94,14 +93,15 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
-  <div class="headband"></div>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
 
-  <main class="main">
-    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-container">
+    <main class="main">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+        <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
-    <div class="toggle" aria-label="Navigationsleiste an/ausschalten">
+    <div class="toggle" aria-label="تشغيل شريط التصفح">
     </div>
   </div>
 
@@ -127,7 +127,7 @@
 
 
 </div>
-        
+          
   
   <div class="toggle sidebar-toggle">
     <span class="toggle-line"></span>
@@ -140,10 +140,10 @@
     <div class="sidebar-inner sidebar-overview-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
-          Inhaltsverzeichnis
+          المحتويات
         </li>
         <li class="sidebar-nav-overview">
-          Übersicht
+          عام
         </li>
       </ul>
 
@@ -153,21 +153,21 @@
       <!--/noindex-->
 
       <section class="site-overview-wrap sidebar-panel">
-        <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
   <p class="site-author-name" itemprop="name">Kynan Stewart Hughes</p>
   <div class="site-description" itemprop="description"></div>
 </div>
-<div class="site-state-wrap site-overview-item animated">
+<div class="site-state-wrap animated">
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">13</span>
-          <span class="site-state-item-name">Artikel</span>
+          <span class="site-state-item-count">14</span>
+          <span class="site-state-item-name">المقالات</span>
         </a>
       </div>
       <div class="site-state-item site-state-tags">
         <span class="site-state-item-count">10</span>
-        <span class="site-state-item-name">schlagwörter</span>
+        <span class="site-state-item-name">الوسوم</span>
       </div>
   </nav>
 </div>
@@ -177,35 +177,32 @@
       </section>
     </div>
   </aside>
-  <div class="sidebar-dimmer"></div>
+  <div id="sidebar-dimmer"></div>
 
 
-    </header>
+      </header>
 
-    
+      
   <div class="back-to-top">
     <i class="fa fa-arrow-up"></i>
     <span>0%</span>
   </div>
 
 <noscript>
-  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+  <div id="noscript-warning">Theme NexT works best with JavaScript enabled</div>
 </noscript>
 
 
-    <div class="main-inner post posts-expand">
-      
+      <div class="main-inner">
+        
 
-      
+        <div class="content post posts-expand">
+          
 
-  
-
-
-<div class="post-block">
+    
   
   
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="English">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="English">
     <link itemprop="mainEntityOfPage" href="https://devlog.brokenbaysoftware.co/2020/05/18/Three-js/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -217,31 +214,31 @@
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Devlog for “Collapsing Cyberspace”">
     </span>
+
+    
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
           Three.js
         </h1>
 
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Veröffentlicht am</span>
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">نُشر في</span>
 
-      <time title="Erstellt: 2020-05-18 07:19:05" itemprop="dateCreated datePublished" datetime="2020-05-18T07:19:05+10:00">2020-05-18</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Bearbeitet am</span>
-        <time title="Geändert am: 2020-08-15 21:32:47" itemprop="dateModified" datetime="2020-08-15T21:32:47+10:00">2020-08-15</time>
-      </span>
+              <time title="أُنشأ: 2020-05-18 07:19:05" itemprop="dateCreated datePublished" datetime="2020-05-18T07:19:05+10:00">2020-05-18</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">عُدل في</span>
+                <time title="عُدل: 2020-08-15 08:34:30" itemprop="dateModified" datetime="2020-08-15T08:34:30+10:00">2020-08-15</time>
+              </span>
 
-  
-</div>
+          
 
         </div>
       </header>
@@ -250,17 +247,17 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p>WebAR is built on WebGL, and the library for working with WebGL is <a href="https://threejs.org/" target="_blank" rel="noopener">three.js</a>, invented by <a href="https://github.com/mrdoob/three.js/" target="_blank" rel="noopener">mrdoob</a>. Before learning webAR, I thought I should do a couple of experiments with three.js so that I understood some of the basic concepts. Also, I wanted to test out my <a href="../../17/ES-Preact-Boilerplate-AKA-Goodthing/">boilerplate</a>.</p>
-<p><a href="http://sketches.brokenbaysoftware.co/lines1/" target="_blank" rel="noopener">Lines1</a> is a line generated from a 100 random points. Not random exactly but random within a range around the last point that was generated.</p>
-<p><a href="http://sketches.brokenbaysoftware.co/lines2/" target="_blank" rel="noopener">Lines2</a> is the same thing but 100… or a 1000, i can’t remember… lines are generated at once and rendered to the scene.</p>
+        <p>WebAR is built on WebGL, and the library for working with WebGL is <a target="_blank" rel="noopener" href="https://threejs.org/">three.js</a>, invented by <a target="_blank" rel="noopener" href="https://github.com/mrdoob/three.js/">mrdoob</a>. Before learning webAR, I thought I should do a couple of experiments with three.js so that I understood some of the basic concepts. Also, I wanted to test out my <a href="../../17/ES-Preact-Boilerplate-AKA-Goodthing/">boilerplate</a>.</p>
+<p><a target="_blank" rel="noopener" href="http://sketches.brokenbaysoftware.co/lines1/">Lines1</a> is a line generated from a 100 random points. Not random exactly but random within a range around the last point that was generated.</p>
+<p><a target="_blank" rel="noopener" href="http://sketches.brokenbaysoftware.co/lines2/">Lines2</a> is the same thing but 100… or a 1000, i can’t remember… lines are generated at once and rendered to the scene.</p>
 <p>The key learnings were:</p>
 <ul>
 <li>How to use three.js with a <code>useEffect()</code> hook in a Preact component - kind of cheating but a nice way to just do vanilla JS with Preact/React</li>
 <li>Working out how to re-render</li>
 <li>Getting the thing to go full screen on tap</li>
 </ul>
-<p>Doing three.js inside <code>useEffect()</code> is basically just a mess of side effects. Not very functional at all. The approach I’ve use so far is very procedural - set up all the properties for the scene things and then render, then do this onTapEnd, etc. It’s very oldschool. One idea might be to use RX.js but I’m wondering if it’s worth it. <a href="https://aframe.io/docs/1.0.0/introduction/" target="_blank" rel="noopener">A-Frame</a> is an HTML-like, declarative wrapper around three.js. It might be better to just use that and hide away all the funny business.</p>
-<p>Looking ahead at the <a href="https://ar-js-org.github.io/AR.js-Docs/" target="_blank" rel="noopener">AR.js docs</a>, all the examples use AR.js. There is a version of AR.js that uses three.js directly without A-Frame but there aren’t any actual examples in the docs showing how to use it, just some repos on GitHub. So, the next step is probably to try out Goodthing with AR.js.</p>
+<p>Doing three.js inside <code>useEffect()</code> is basically just a mess of side effects. Not very functional at all. The approach I’ve use so far is very procedural - set up all the properties for the scene things and then render, then do this onTapEnd, etc. It’s very oldschool. One idea might be to use RX.js but I’m wondering if it’s worth it. <a target="_blank" rel="noopener" href="https://aframe.io/docs/1.0.0/introduction/">A-Frame</a> is an HTML-like, declarative wrapper around three.js. It might be better to just use that and hide away all the funny business.</p>
+<p>Looking ahead at the <a target="_blank" rel="noopener" href="https://ar-js-org.github.io/AR.js-Docs/">AR.js docs</a>, all the examples use AR.js. There is a version of AR.js that uses three.js directly without A-Frame but there aren’t any actual examples in the docs showing how to use it, just some repos on GitHub. So, the next step is probably to try out Goodthing with AR.js.</p>
 
     </div>
 
@@ -268,35 +265,36 @@
     
     
 
-    <footer class="post-footer">
+      <footer class="post-footer">
           <div class="post-tags">
               <a href="/tags/javascript-webAR/" rel="tag"># javascript, webAR</a>
           </div>
 
         
 
-          <div class="post-nav">
-            <div class="post-nav-item">
-                <a href="/2020/05/17/Notes-on-Art-from-Dave-Snowden/" rel="prev" title="Notes on Art from Dave Snowden">
-                  <i class="fa fa-chevron-left"></i> Notes on Art from Dave Snowden
-                </a>
-            </div>
-            <div class="post-nav-item">
-                <a href="/2020/05/21/TheArchitectureOfWebAR/" rel="next" title="The Architecture of WebAR">
-                  The Architecture of WebAR <i class="fa fa-chevron-right"></i>
-                </a>
-            </div>
-          </div>
-    </footer>
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/05/17/Notes-on-Art-from-Dave-Snowden/" rel="prev" title="Notes on Art from Dave Snowden">
+      <i class="fa fa-chevron-left"></i> Notes on Art from Dave Snowden
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/05/21/TheArchitectureOfWebAR/" rel="next" title="The Architecture of WebAR">
+      The Architecture of WebAR <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
   </article>
-</div>
+  
+  
+  
 
 
 
-
-
-
-      
+        </div>
+        
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -305,7 +303,7 @@
       activeClass = localStorage.getItem('comments_active') || activeClass;
     }
     if (activeClass) {
-      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
       if (activeTab) {
         activeTab.click();
       }
@@ -314,60 +312,68 @@
   if (CONFIG.comments.storage) {
     window.addEventListener('tabs:click', event => {
       if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      const commentClass = event.target.classList[1];
+      let commentClass = event.target.classList[1];
       localStorage.setItem('comments_active', commentClass);
     });
   }
 </script>
 
-    </div>
-  </main>
+      </div>
+    </main>
 
-  <footer class="footer">
-    <div class="footer-inner">
-      
+    <footer class="footer">
+      <div class="footer-inner">
+        
 
-      
+        
 
 <div class="copyright">
   
   &copy; 
-  <span itemprop="copyrightYear">2020</span>
+  <span itemprop="copyrightYear">2021</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Kynan Stewart Hughes</span>
 </div>
-  <div class="powered-by">Erstellt mit  <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
+  <div class="powered-by">تطبيق الموقع <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
   </div>
 
-    </div>
-  </footer>
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
 
   
-  <script src="//cdn.jsdelivr.net/npm/animejs@3.2.0/lib/anime.min.js"></script>
-<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+  <script src="/lib/anime.min.js"></script>
 
-  
+<script src="/js/utils.js"></script>
 
-
-
+<script src="/js/motion.js"></script>
 
 
+<script src="/js/schemes/muse.js"></script>
 
 
-
-
-
-
-
-
-
-
-
+<script src="/js/next-boot.js"></script>
 
 
   
+
+
+
+
+
+
+
 
 
 
